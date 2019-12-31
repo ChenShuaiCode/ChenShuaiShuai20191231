@@ -45,6 +45,7 @@ public class TuiAdapter extends RecyclerView.Adapter<TuiAdapter.VH > {
         Glide.with(context).load(list.get(position).getAvatar())
                 .error(R.mipmap.ic_launcher)
                 .placeholder(R.mipmap.ic_launcher)
+                .circleCrop()
                 .into(holder.iv);
         holder.tv.setText(list.get(position).getName());
         holder.itemView.setOnClickListener(new View.OnClickListener() {

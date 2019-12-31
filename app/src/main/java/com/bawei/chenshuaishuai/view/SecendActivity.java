@@ -47,7 +47,5 @@ public class SecendActivity extends AppCompatActivity {
                 return false;
             }
         });
-
-
     }
 }
